@@ -1,5 +1,10 @@
 import React from 'react';
+import { Form } from './components';
 
 export default function App() {
-    return <div>Hi.</div>
+    return (
+        <>
+            <Form />
+        </>
+    )
 }
