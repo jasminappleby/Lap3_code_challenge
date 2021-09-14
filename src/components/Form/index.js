@@ -1,24 +1,36 @@
 import React, { useState } from 'react';
+// import { Result } from '../../components';
 
-function Form() {
+
+function Form({ fetchRepos }) {
 
     const [ user, setUser ] = useState()
 
-    const [fetched, setFetched] = useState(false)
+    // const [ fetched, setFetched ] = useState(false)
+
+    // const [ fetchedData, setFetchedData ] = useState()
+
+    // const fetchData = async () => {
+    //     const response = await fetch(`https://api.github.com/users/${user}/repos`)
+    //     const result = await response.json()
+    //     console.log(result)
+    //     setFetched(true)
+    //     setFetchedData(result)
+    // }
 
     const handleSubmit = async e => {
         e.preventDefault()
-        const response = await fetch(`https://api.github.com/users/${user}/repos`)
-        const result = await response.json()
-        setFetched(true)
+        fetchRepos(user)
     }
 
-    // const renderResult = () => <Result result={result}/>
+    // const renderResult = () => <Result result={fetchedData}/>
 
     const updateInput = e => {
         const input = e.target.value 
         setUser(input)
     }
+
+
 
     return (
         <div>
@@ -26,7 +38,7 @@ function Form() {
                 <input type="text" aria-label="Username" onChange={e => updateInput(e)}/>
                 <input type="submit" value="Search" />
             </form>
-            { fetched ? <p>penguins</p> : <p>go away penguins</p> }   
+            {/* { fetched ? renderResult() : <p>go away penguins</p> }    */}
         </div>
     );
 };
