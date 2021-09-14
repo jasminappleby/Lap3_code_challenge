@@ -5,6 +5,7 @@ function Form({ getResult }) {
     const [ location, setLocation ] = useState("")
 
     const handleSubmit = e => {
+        e.preventDefault()
         getResult(location);
     }
 
@@ -12,7 +13,6 @@ function Form({ getResult }) {
         const input = e.target.value 
         setLocation(input)
     }
-
 
     return (
         <form onSubmit={handleSubmit} role="form">
