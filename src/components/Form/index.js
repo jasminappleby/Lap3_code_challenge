@@ -1,12 +1,11 @@
 import React from 'react';
 
-function Form({ getResult }) {
+function Form({  }) {
 
     const [ location, setLocation ] = useState("")
 
     const handleSubmit = e => {
         e.preventDefault()
-        getResult(location);
     }
 
     const updateInput = e => {
