@@ -34,8 +34,11 @@ function Form({ fetchRepos }) {
 
     return (
         <div>
+            <h1>GitHub Repo Search</h1>
+            <p>Use the below search bar to see that particular users repos and some information about them!</p>
             <form onSubmit={handleSubmit} role="form">
-                <input type="text" aria-label="Username" onChange={e => updateInput(e)}/>
+                <label for="user-search">Username: </label>
+                <input type="text" aria-label="Username" id="user-search" onChange={e => updateInput(e)}/>
                 <input type="submit" value="Search" />
             </form>
             {/* { fetched ? renderResult() : <p>go away penguins</p> }    */}
