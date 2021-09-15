@@ -16,7 +16,7 @@ export default function Render(){
         <div>
             <Form fetchRepos={user}/>
 
-            { fetched ? renderResult() : <p>go away penguins</p> }   
+            { renderResult() }   
 
         </div>
     )

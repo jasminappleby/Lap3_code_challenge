@@ -1,16 +1,15 @@
 import React from 'react';
 
 export default function ({ result }) {
+    
+    const length = result.length
+    let arr = new Array(length)
 
-    const list = document.createElement("ul")
-
-    result.forEach(repo => {
-        const listItem = document.createElement("li")
-        listItem.textContent = repo.name
-        list.appendChild(listItem)
-    })
+    for( let i = 0; i < length; i++ ) {
+        arr[i] = <p>{result[i].name}</p>
+    }
 
     return (
-        <p>list</p>
+        <div>{arr}</div>
     )
 }
