@@ -11,6 +11,7 @@ export default function ({ result }) {
         <div>
             <section className="section-border">
                 <h2 className="repo">{result[i].name}</h2>
+                <br></br>
                 <p className="results"> Open Issues: {result[i].open_issues_count}</p>
                 <p className="results"> Stargazers: {result[i].stargazers_count}</p>
                 <p className="results"> Forks: {result[i].forks_count}</p>
