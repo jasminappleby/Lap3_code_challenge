@@ -14,8 +14,6 @@ function Form({ fetchRepos }) {
         setUser(input)
     }
 
-
-
     return (
         <div>
             <h1>GitHub Repo Search</h1>

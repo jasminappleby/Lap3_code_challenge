@@ -15,9 +15,7 @@ export default function Render(){
     return (
         <div>
             <Form fetchRepos={user}/>
-
             { renderResult() }   
-
         </div>
     )
 

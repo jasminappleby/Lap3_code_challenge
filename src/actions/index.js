@@ -1,6 +1,4 @@
-
 const loadRepos = { name: "penguins" }
-
 
 export const fetchRepos = user => {
     return async dispatch => {
