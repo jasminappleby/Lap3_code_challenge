@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Form, Result } from '../../components';
 import { fetchRepos } from '../../actions';
 
-function Render(){
+export default function Render(){
 
     const dispatch = useDispatch();
     const name = useSelector(state => state.name);
@@ -22,3 +22,4 @@ function Render(){
     )
 
 }
+
