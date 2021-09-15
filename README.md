@@ -7,6 +7,8 @@
 - Use `npm run dev` 
 - If your browser does not open automatically, go to your browser and use `http://localhost:8080/`
 
+Or, if you are feeling lazy... [click here](https://repo-searcher.netlify.app).
+
 ## Technologies Used
 
 - React 
