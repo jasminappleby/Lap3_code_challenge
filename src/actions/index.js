@@ -1,4 +1,8 @@
-const fetchRepos = user => {
+
+const loadRepos = { name: "penguins" }
+
+
+export const fetchRepos = user => {
     return async dispatch => {
         try {
             const response = await fetch(`https://api.github.com/users/${user}/repos`)
@@ -13,5 +17,3 @@ const fetchRepos = user => {
         }
     }  
 }
-
-export default fetchRepos
