@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+* {
+    font-family: 'Urbanist', sans-serif;
+    box-sizing: border-box;
+}
+
+.section-border {
+    background-color: orange;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+}
+
 .repo {
+    font-weight: bolder;
+}
+
+.results {
     color: blue;
 }
