@@ -1,10 +1,10 @@
 import React from 'react';
-import { Form } from './components';
+import { Render } from './components';
 
 export default function App() {
     return (
         <>
-            <Form />
+            <Render />
         </>
     )
 }
