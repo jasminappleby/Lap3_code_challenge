@@ -8,7 +8,6 @@ export default function ({ result }) {
 
     for( let i = 0; i < length; i++ ) {
         arr[i] = 
-        <div>
             <section className="section-border">
                 <h2 className="repo">{result[i].name}</h2>
                 <br></br>
@@ -16,10 +15,11 @@ export default function ({ result }) {
                 <p className="results"> Stargazers: {result[i].stargazers_count}</p>
                 <p className="results"> Forks: {result[i].forks_count}</p>
             </section>
-        </div>
     }
 
     return (
+        <div className="flex">
         <div>{arr}</div>
+        </div>
     )
 }
