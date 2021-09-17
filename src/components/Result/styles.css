@@ -20,6 +20,7 @@ h1 {
 .flex {
     display: flex;
     justify-content: center;
+    flex-direction: row;
 }
 
 .section-border {

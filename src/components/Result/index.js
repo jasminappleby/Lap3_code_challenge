@@ -18,8 +18,6 @@ export default function ({ result }) {
     }
 
     return (
-        <div className="flex">
-        <div>{arr}</div>
-        </div>
+        <div className="flex">{arr}</div>
     )
 }
